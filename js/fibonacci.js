@@ -2,7 +2,7 @@ const fibonacci = (num) => {
 
     //edge case
     if(num ===0 || num ===1) {
-        return console.log(num);
+        return num;
     }
    //to get each new fib number you add the two in front of it
    
@@ -16,8 +16,9 @@ const fibonacci = (num) => {
         sum = numberOne + numberTwo;
    }
    
-   return console.log(sum);
+   //return console.log(sum);
+   return sum;
 }
 
-fibonacci(10) //-> 2
-//module.exports = {fibonacci}
+//fibonacci(10) //-> 2
+module.exports = {fibonacci}
